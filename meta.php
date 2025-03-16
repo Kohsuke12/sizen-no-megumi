@@ -53,10 +53,10 @@ td設定＆OGP
 *********************/
 $meta_settings = array(
     'title_separator' => ' | ', // タイトル区切り
-    'main_title' => '北海道富良野の運送会社 | 株式会社 共通運輸', // 下層ページの接尾辞（固定ver）
+    'main_title' => '自然の恵み農園 | 自然の恵み農園', // 下層ページの接尾辞（固定ver）
     'og_image_default' => esc_url(get_template_directory_uri() . '/assets/img/ogp.jpg'), //OGP画像
-    'archive_default_title' => 'お知らせ | 北海道富良野の運送会社 | 株式会社 共通運輸',
-    'archive_default_description' => '株式会社共通運輸のお知らせ一覧ページです。新着情報や弊社のサービスに関するお知らせを当ページよりご覧になれます。',
+    'archive_default_title' => 'お知らせ | 北海道富良野の運送会社 | 株式会社 自然の恵み農園',
+    'archive_default_description' => '自然の恵み農園のお知らせ一覧ページです。新着情報や弊社のサービスに関するお知らせを当ページよりご覧になれます。',
     'not_found_title' => 'ページが見つかりませんでした',
     'not_found_description' => 'ページが見つかりませんでした'
 );
@@ -95,8 +95,8 @@ function my_meta_tags() {
           $post_type = get_post_type();
           switch ($post_type) {
               case 'news':
-                  $title = 'お知らせ | 北海道富良野の運送会社 | 株式会社 共通運輸';
-                  $description = '株式会社共通運輸のお知らせ一覧ページです。新着情報や弊社のサービスに関するお知らせを当ページよりご覧になれます。';
+                  $title = 'お知らせ | 自然の恵み農園';
+                  $description = '自然の恵み農園のお知らせ一覧ページです。新着情報や弊社のサービスに関するお知らせを当ページよりご覧になれます。';
                   break;
               // 追加のカスタム投稿タイプがあればここに追記
               default:
